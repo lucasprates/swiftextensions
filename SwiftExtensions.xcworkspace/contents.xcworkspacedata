@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Workspace
+   version = "1.0">
+   <Group
+      location = "group:SwiftExtensions"
+      name = "SwiftExtensions">
+      <FileRef
+         location = "group:SwiftExtensions.xcodeproj">
+      </FileRef>
+   </Group>
+   <FileRef
+      location = "group:LICENSE">
+   </FileRef>
+   <FileRef
+      location = "group:README.md">
+   </FileRef>
+</Workspace>
