@@ -8,24 +8,39 @@
 import XCTest
 
 class TestArrayExtensions: XCTestCase {
+    
+    var arrayToTest: Array<String> = []
 
     override func setUp() {
-        // Put setup code here. This method is called before the invocation of each test method in the class.
+        self.arrayToTest = ["0", "1", "2", "3", "a", "b", "c", "d"]
     }
 
     override func tearDown() {
         // Put teardown code here. This method is called after the invocation of each test method in the class.
     }
 
-    func testExample() {
-        // This is an example of a functional test case.
-        // Use XCTAssert and related functions to verify your tests produce the correct results.
+    func testSendElementToTheEnd() {
+        //Testing sending different elements to the end of an array
+        for i in (0...4).reversed(){
+            let oldStringAtPosition = self.arrayToTest[i]
+            self.arrayToTest.sendElementToTheEnd(fromIndex: i)
+            
+             XCTAssertTrue(self.arrayToTest.last == oldStringAtPosition, "Element sent to the end of the Array does not match what it was intented to be at index " + i.description)
+        }
     }
 
-    func testPerformanceExample() {
-        // This is an example of a performance test case.
-        self.measure {
-            // Put the code you want to measure the time of here.
+    func testStablePartition(){
+        //Testing stable partition method using letters and numbers in an array, dividing them by which one can be represented as a integer number (dividing between numbers and letters)
+        let arrayPartitionResult: ([String], [String]) = self.arrayToTest.stablePartition(by: { Int($0) != nil })
+        
+        for stringNumbersInArray in arrayPartitionResult.0{
+            //check for numbers as string
+            XCTAssertTrue(Int(stringNumbersInArray) != nil, "Array partition not dividing string array correctly in numbers between numbers and letters")
+        }
+        
+        for stringLettersInArray in arrayPartitionResult.1{
+            //check for numbers as string
+            XCTAssertTrue(Int(stringLettersInArray) == nil, "Array partition not dividing string array correctly in letters between numbers and letters")
         }
     }
 

@@ -21,7 +21,10 @@
 		A0C704D6219713200003192B /* StringExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0C704D5219713200003192B /* StringExtension.swift */; };
 		A0C704D82197135E0003192B /* TextStringExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0C704D72197135E0003192B /* TextStringExtensions.swift */; };
 		A0C704DA219719B10003192B /* NSObjectExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0C704D9219719B10003192B /* NSObjectExtensions.swift */; };
-		A0C704DC219719D30003192B /* NSObjectExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0C704DB219719D30003192B /* NSObjectExtensions.swift */; };
+		A0C704DC219719D30003192B /* TestNSObjectExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0C704DB219719D30003192B /* TestNSObjectExtensions.swift */; };
+		A0D636B52199BDC5002F3D9B /* NSObjectExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0C704D9219719B10003192B /* NSObjectExtensions.swift */; };
+		A0D636B62199BF50002F3D9B /* ArrayExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0C704AA2197101B0003192B /* ArrayExtensions.swift */; };
+		A0D636BA2199C147002F3D9B /* TestingAssets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A0D636B82199C147002F3D9B /* TestingAssets.xcassets */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -52,7 +55,8 @@
 		A0C704D5219713200003192B /* StringExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StringExtension.swift; sourceTree = "<group>"; };
 		A0C704D72197135E0003192B /* TextStringExtensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextStringExtensions.swift; sourceTree = "<group>"; };
 		A0C704D9219719B10003192B /* NSObjectExtensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NSObjectExtensions.swift; sourceTree = "<group>"; };
-		A0C704DB219719D30003192B /* NSObjectExtensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NSObjectExtensions.swift; sourceTree = "<group>"; };
+		A0C704DB219719D30003192B /* TestNSObjectExtensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestNSObjectExtensions.swift; sourceTree = "<group>"; };
+		A0D636B82199C147002F3D9B /* TestingAssets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = TestingAssets.xcassets; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -87,12 +91,13 @@
 		A0C704A221970F9C0003192B /* Tests */ = {
 			isa = PBXGroup;
 			children = (
+				A0D636B72199C11E002F3D9B /* Testing Assets */,
+				A0C704DB219719D30003192B /* TestNSObjectExtensions.swift */,
+				A0C704AB219710270003192B /* TestArrayExtensions.swift */,
 				A0C704A321970F9C0003192B /* TestDateExtensions.swift */,
 				A0C704A421970F9C0003192B /* TextUIImageExtensions.swift */,
 				A0C704A921970FF00003192B /* TestNSMutableAttributedStringExtensions.swift */,
-				A0C704AB219710270003192B /* TestArrayExtensions.swift */,
 				A0C704D72197135E0003192B /* TextStringExtensions.swift */,
-				A0C704DB219719D30003192B /* NSObjectExtensions.swift */,
 			);
 			path = Tests;
 			sourceTree = "<group>";
@@ -144,6 +149,14 @@
 				A0C704BF219711870003192B /* SwiftExtensionsTests */,
 			);
 			path = Targets;
+			sourceTree = "<group>";
+		};
+		A0D636B72199C11E002F3D9B /* Testing Assets */ = {
+			isa = PBXGroup;
+			children = (
+				A0D636B82199C147002F3D9B /* TestingAssets.xcassets */,
+			);
+			path = "Testing Assets";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -243,6 +256,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A0D636BA2199C147002F3D9B /* TestingAssets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -269,9 +283,11 @@
 				A0C704C1219711870003192B /* SwiftExtensionsTests.swift in Sources */,
 				A0C704D82197135E0003192B /* TextStringExtensions.swift in Sources */,
 				A0C704CB219711DB0003192B /* TextUIImageExtensions.swift in Sources */,
+				A0D636B52199BDC5002F3D9B /* NSObjectExtensions.swift in Sources */,
 				A0C704CC219711DD0003192B /* TestNSMutableAttributedStringExtensions.swift in Sources */,
-				A0C704DC219719D30003192B /* NSObjectExtensions.swift in Sources */,
+				A0C704DC219719D30003192B /* TestNSObjectExtensions.swift in Sources */,
 				A0C704CA219711D70003192B /* TestDateExtensions.swift in Sources */,
+				A0D636B62199BF50002F3D9B /* ArrayExtensions.swift in Sources */,
 				A0C704CD219711DF0003192B /* TestArrayExtensions.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
