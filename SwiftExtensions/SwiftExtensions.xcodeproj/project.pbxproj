@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		A09B45F921A3413100BF5694 /* NSMutableAttributedStringExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0C704A821970FD30003192B /* NSMutableAttributedStringExtensions.swift */; };
 		A0C704B6219711670003192B /* SwiftExtensions.h in Headers */ = {isa = PBXBuildFile; fileRef = A0C704B4219711670003192B /* SwiftExtensions.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		A0C704C1219711870003192B /* SwiftExtensionsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0C704C0219711870003192B /* SwiftExtensionsTests.swift */; };
 		A0C704C3219711870003192B /* SwiftExtensions.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A0C704B1219711670003192B /* SwiftExtensions.framework */; };
@@ -94,10 +95,10 @@
 				A0D636B72199C11E002F3D9B /* Testing Assets */,
 				A0C704DB219719D30003192B /* TestNSObjectExtensions.swift */,
 				A0C704AB219710270003192B /* TestArrayExtensions.swift */,
-				A0C704A321970F9C0003192B /* TestDateExtensions.swift */,
-				A0C704A421970F9C0003192B /* TextUIImageExtensions.swift */,
-				A0C704A921970FF00003192B /* TestNSMutableAttributedStringExtensions.swift */,
 				A0C704D72197135E0003192B /* TextStringExtensions.swift */,
+				A0C704A321970F9C0003192B /* TestDateExtensions.swift */,
+				A0C704A921970FF00003192B /* TestNSMutableAttributedStringExtensions.swift */,
+				A0C704A421970F9C0003192B /* TextUIImageExtensions.swift */,
 			);
 			path = Tests;
 			sourceTree = "<group>";
@@ -280,6 +281,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A09B45F921A3413100BF5694 /* NSMutableAttributedStringExtensions.swift in Sources */,
 				A0C704C1219711870003192B /* SwiftExtensionsTests.swift in Sources */,
 				A0C704D82197135E0003192B /* TextStringExtensions.swift in Sources */,
 				A0C704CB219711DB0003192B /* TextUIImageExtensions.swift in Sources */,

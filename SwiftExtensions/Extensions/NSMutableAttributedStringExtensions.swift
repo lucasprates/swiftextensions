@@ -12,7 +12,7 @@ class NSMutableAttributedStringExtensions: NSObject {
 }
 
 extension NSMutableAttributedString {
-    //create an attributed string passing a txt, a font (type, size) and a color
+    //append to an attributed string a txt with chosen font (type, size) and a color
     func attrStr(text: String, font: UIFont, textColor: UIColor) -> NSMutableAttributedString {
         let attributes: [NSAttributedString.Key: Any] = [
             NSAttributedString.Key.font: font,

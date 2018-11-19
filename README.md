@@ -31,7 +31,7 @@ The extensions, so far, are at classes:
 - getWeekDaysInEnglish() - Gets the weekday in english form, from one of the options (monday, tuesday, wednesday, thursday, friday, saturday, sunday)
 
 - NSMutableAttributedString
-- attrStr(...) - Create an attributed string passing a txt, a font (type, size, etc) and a color
+- attrStr(...) - Append to an existing attributed string a txt with a font (type, size, etc) and a color attributed to it
 - UIImage (Mac and iOS SDK only)
 - roundedImage() - returns a four corners rounded image of any given UIImage, making it as if it was a circled one
 - resizeImageWith(...) - Resizes an image on its largest size by a given size, respecting its previous aspect ratio
