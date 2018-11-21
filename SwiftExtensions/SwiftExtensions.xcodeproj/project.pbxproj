@@ -7,6 +7,13 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		A062205721A5DB0000A17065 /* UIImageExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0C704A621970F9C0003192B /* UIImageExtensions.swift */; };
+		A062206A21A5E33D00A17065 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A062206921A5E33D00A17065 /* UIKit.framework */; };
+		A062206C21A5E40000A17065 /* ImageTest.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A062206B21A5E40000A17065 /* ImageTest.xcassets */; };
+		A062206D21A5E40000A17065 /* ImageTest.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A062206B21A5E40000A17065 /* ImageTest.xcassets */; };
+		A062206F21A5EE7E00A17065 /* UIColorExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = A062206E21A5EE7E00A17065 /* UIColorExtensions.swift */; };
+		A062207021A5EE7E00A17065 /* UIColorExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = A062206E21A5EE7E00A17065 /* UIColorExtensions.swift */; };
+		A062207521A5EEC900A17065 /* TestUIColorExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = A062207421A5EEC900A17065 /* TestUIColorExtensions.swift */; };
 		A09B45F921A3413100BF5694 /* NSMutableAttributedStringExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0C704A821970FD30003192B /* NSMutableAttributedStringExtensions.swift */; };
 		A0C704B6219711670003192B /* SwiftExtensions.h in Headers */ = {isa = PBXBuildFile; fileRef = A0C704B4219711670003192B /* SwiftExtensions.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		A0C704C1219711870003192B /* SwiftExtensionsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0C704C0219711870003192B /* SwiftExtensionsTests.swift */; };
@@ -25,7 +32,6 @@
 		A0C704DC219719D30003192B /* TestNSObjectExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0C704DB219719D30003192B /* TestNSObjectExtensions.swift */; };
 		A0D636B52199BDC5002F3D9B /* NSObjectExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0C704D9219719B10003192B /* NSObjectExtensions.swift */; };
 		A0D636B62199BF50002F3D9B /* ArrayExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0C704AA2197101B0003192B /* ArrayExtensions.swift */; };
-		A0D636BA2199C147002F3D9B /* TestingAssets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A0D636B82199C147002F3D9B /* TestingAssets.xcassets */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -39,6 +45,11 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		A062206721A5E22900A17065 /* AssetsLibrary.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AssetsLibrary.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS12.1.sdk/System/Library/Frameworks/AssetsLibrary.framework; sourceTree = DEVELOPER_DIR; };
+		A062206921A5E33D00A17065 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS12.1.sdk/System/Library/Frameworks/UIKit.framework; sourceTree = DEVELOPER_DIR; };
+		A062206B21A5E40000A17065 /* ImageTest.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = ImageTest.xcassets; sourceTree = "<group>"; };
+		A062206E21A5EE7E00A17065 /* UIColorExtensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIColorExtensions.swift; sourceTree = "<group>"; };
+		A062207421A5EEC900A17065 /* TestUIColorExtensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestUIColorExtensions.swift; sourceTree = "<group>"; };
 		A0C704A321970F9C0003192B /* TestDateExtensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestDateExtensions.swift; sourceTree = "<group>"; };
 		A0C704A421970F9C0003192B /* TextUIImageExtensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextUIImageExtensions.swift; sourceTree = "<group>"; };
 		A0C704A621970F9C0003192B /* UIImageExtensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIImageExtensions.swift; sourceTree = "<group>"; };
@@ -57,7 +68,6 @@
 		A0C704D72197135E0003192B /* TextStringExtensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextStringExtensions.swift; sourceTree = "<group>"; };
 		A0C704D9219719B10003192B /* NSObjectExtensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NSObjectExtensions.swift; sourceTree = "<group>"; };
 		A0C704DB219719D30003192B /* TestNSObjectExtensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestNSObjectExtensions.swift; sourceTree = "<group>"; };
-		A0D636B82199C147002F3D9B /* TestingAssets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = TestingAssets.xcassets; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -65,6 +75,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A062206A21A5E33D00A17065 /* UIKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -86,7 +97,17 @@
 				A0C704A221970F9C0003192B /* Tests */,
 				A0C704C92197118D0003192B /* Targets */,
 				A0C704B2219711670003192B /* Products */,
+				A062206621A5E22900A17065 /* Frameworks */,
 			);
+			sourceTree = "<group>";
+		};
+		A062206621A5E22900A17065 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				A062206921A5E33D00A17065 /* UIKit.framework */,
+				A062206721A5E22900A17065 /* AssetsLibrary.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 		A0C704A221970F9C0003192B /* Tests */ = {
@@ -98,6 +119,7 @@
 				A0C704D72197135E0003192B /* TextStringExtensions.swift */,
 				A0C704A321970F9C0003192B /* TestDateExtensions.swift */,
 				A0C704A921970FF00003192B /* TestNSMutableAttributedStringExtensions.swift */,
+				A062207421A5EEC900A17065 /* TestUIColorExtensions.swift */,
 				A0C704A421970F9C0003192B /* TextUIImageExtensions.swift */,
 			);
 			path = Tests;
@@ -111,6 +133,7 @@
 				A0C704D5219713200003192B /* StringExtension.swift */,
 				A0C704A721970F9C0003192B /* DateExtensions.swift */,
 				A0C704A821970FD30003192B /* NSMutableAttributedStringExtensions.swift */,
+				A062206E21A5EE7E00A17065 /* UIColorExtensions.swift */,
 				A0C704A621970F9C0003192B /* UIImageExtensions.swift */,
 			);
 			path = Extensions;
@@ -155,7 +178,7 @@
 		A0D636B72199C11E002F3D9B /* Testing Assets */ = {
 			isa = PBXGroup;
 			children = (
-				A0D636B82199C147002F3D9B /* TestingAssets.xcassets */,
+				A062206B21A5E40000A17065 /* ImageTest.xcassets */,
 			);
 			path = "Testing Assets";
 			sourceTree = "<group>";
@@ -250,6 +273,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A062206C21A5E40000A17065 /* ImageTest.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -257,7 +281,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				A0D636BA2199C147002F3D9B /* TestingAssets.xcassets in Resources */,
+				A062206D21A5E40000A17065 /* ImageTest.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -269,6 +293,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				A0C704CF219711E50003192B /* NSMutableAttributedStringExtensions.swift in Sources */,
+				A062206F21A5EE7E00A17065 /* UIColorExtensions.swift in Sources */,
 				A0C704CE219711E30003192B /* ArrayExtensions.swift in Sources */,
 				A0C704D6219713200003192B /* StringExtension.swift in Sources */,
 				A0C704D0219711E70003192B /* DateExtensions.swift in Sources */,
@@ -282,7 +307,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				A09B45F921A3413100BF5694 /* NSMutableAttributedStringExtensions.swift in Sources */,
+				A062205721A5DB0000A17065 /* UIImageExtensions.swift in Sources */,
 				A0C704C1219711870003192B /* SwiftExtensionsTests.swift in Sources */,
+				A062207521A5EEC900A17065 /* TestUIColorExtensions.swift in Sources */,
+				A062207021A5EE7E00A17065 /* UIColorExtensions.swift in Sources */,
 				A0C704D82197135E0003192B /* TextStringExtensions.swift in Sources */,
 				A0C704CB219711DB0003192B /* TextUIImageExtensions.swift in Sources */,
 				A0D636B52199BDC5002F3D9B /* NSObjectExtensions.swift in Sources */,

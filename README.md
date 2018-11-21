@@ -32,9 +32,11 @@ The extensions, so far, are at classes:
 
 - NSMutableAttributedString
 - attrStr(...) - Append to an existing attributed string a txt with a font (type, size, etc) and a color attributed to it
+
 - UIImage (Mac and iOS SDK only)
 - roundedImage() - returns a four corners rounded image of any given UIImage, making it as if it was a circled one
 - resizeImageWith(...) - Resizes an image on its largest size by a given size, respecting its previous aspect ratio
+- getPixelColor(...) - Get the Color of the pixel at desired point of an Image
 
 ### Deploy
 There are many ways you can attach this to your projects. The most recommended are (by most important first):
