@@ -70,7 +70,7 @@ extension Date {
     
     //Get the last date of the month any given date
     func endOfMonth() -> Date {
-        return Calendar.current.date(byAdding: DateComponents(month: 1, day: -1), to: self.startOfMonth())!
+        return Calendar.current.date(byAdding: DateComponents(month: 1, day: -1), to: self.startOfMonth())!.endOfDay
     }
     
     //Get next weekday, in an enum form
