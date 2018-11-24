@@ -1,0 +1,10 @@
+/* 
+  LocalizedTestEN.strings
+  SwiftExtensions
+
+  Created by Lucas on 24/11/2018.
+ 
+    English Test Strings File
+*/
+
+"Hi12Hello34" = "English";

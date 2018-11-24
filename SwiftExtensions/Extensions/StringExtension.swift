@@ -66,6 +66,11 @@ extension String {
     
     //get the correct localized string from a given file name inside Main Bundle (static)
     func localized(fromFile fileName:String) -> String {
-        return NSLocalizedString(self, tableName: fileName, bundle: Bundle.main, value: "", comment: "")
+        return self.localized(fromFile: fileName, inBundle: Bundle.main)
+    }
+    
+    //get the correct localized string from a given file name inside chosen Bundle (static)
+    func localized(fromFile fileName:String, inBundle bundleChosen: Bundle) -> String{
+        return NSLocalizedString(self, tableName: fileName, bundle: bundleChosen, value: "", comment: "")
     }
 }
