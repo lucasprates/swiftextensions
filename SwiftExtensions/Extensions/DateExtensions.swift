@@ -135,3 +135,10 @@ extension Date {
     }
 }
 
+extension Date {
+    
+    //get the elapesed time that passed from the date stored until now
+    func elapsedTime() -> TimeInterval {
+        return Date().timeIntervalSince1970 - self.timeIntervalSince1970
+    }
+}

@@ -127,4 +127,13 @@ class TestDateExtensions: XCTestCase {
             i+=1
         }
     }
+    
+    //Test if a Date's extension to get elapsed time is working properly
+    func testElapsedTimeOfDate() {
+        let now: Date = Date()
+        let pastDate: Date = now.addingTimeInterval(-10.0) //10 seconds into the past (a.k.a. -10.0)
+        
+        let elapsedTime: Int = Int(pastDate.elapsedTime())
+        XCTAssertTrue(elapsedTime == 10) //check if date has 10 seconds of elapsed time
+    }
 }

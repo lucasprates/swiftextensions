@@ -44,4 +44,16 @@ class TestArrayExtensions: XCTestCase {
         }
     }
 
+    func testObjectRemoval(){
+        //Testing if removal of specific object from an array is working correctly
+        let previousArrayCount = arrayToTest.count
+        
+        //doign the actual removal
+        self.arrayToTest.remove(object: "0")
+        
+        //testing if an element was removed, and if that element is 0
+        let isCountOneLess = (previousArrayCount - 1) == self.arrayToTest.count
+        let firstElementIsDifferent = self.arrayToTest.first ?? "" != "0"
+        XCTAssertTrue(isCountOneLess && firstElementIsDifferent)
+    }
 }
